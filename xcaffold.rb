@@ -5,21 +5,21 @@
 class Xcaffold < Formula
   desc "Deterministic agent configuration compiler for AI coding platforms. Compile .xcaf blueprints into native agent configurations."
   homepage "https://github.com/saero-ai/xcaffold"
-  version "0.6.1"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saero-ai/xcaffold/releases/download/v0.6.1/xcaffold_darwin_amd64.tar.gz"
-      sha256 "f82a1fe8b2537dbaaa219d1f7c6d02dfbbce6a12fb7dcc6958618e42f8c9902e"
+      url "https://github.com/saero-ai/xcaffold/releases/download/v0.7.0/xcaffold_darwin_amd64.tar.gz"
+      sha256 "6642c37d09b23e7b89ca3595543627a9b6dd53cdfd8fe7b4e27642350ecb9cfd"
 
       define_method(:install) do
         bin.install "xcaffold"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saero-ai/xcaffold/releases/download/v0.6.1/xcaffold_darwin_arm64.tar.gz"
-      sha256 "e53f12fe121d36d0b18c29631413a2a99c73a5165f8138972b8b3f26e2491510"
+      url "https://github.com/saero-ai/xcaffold/releases/download/v0.7.0/xcaffold_darwin_arm64.tar.gz"
+      sha256 "317cb7115aa4c3129f15d7af895c820d735b6e04b24e7bc261e6f5f9488976ae"
 
       define_method(:install) do
         bin.install "xcaffold"
@@ -29,15 +29,15 @@ class Xcaffold < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saero-ai/xcaffold/releases/download/v0.6.1/xcaffold_linux_amd64.tar.gz"
-      sha256 "f2ba2bc8de8effab7ba2aed148d47f13b871da3d5f021c74b9e2a70d1721dd53"
+      url "https://github.com/saero-ai/xcaffold/releases/download/v0.7.0/xcaffold_linux_amd64.tar.gz"
+      sha256 "cc68d4f6fc9ca3aba6b8b230abf10ec0c98d6dace613e23dee2c1cd78cd9d730"
       define_method(:install) do
         bin.install "xcaffold"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saero-ai/xcaffold/releases/download/v0.6.1/xcaffold_linux_arm64.tar.gz"
-      sha256 "28361d2c5e8c0747ffaccdf4457b1b75d1399c06d0ebb2a1200a4ebfe4f6fedd"
+      url "https://github.com/saero-ai/xcaffold/releases/download/v0.7.0/xcaffold_linux_arm64.tar.gz"
+      sha256 "5af1f478fcc4a292b62860a99a5d1bc7c8cad5004817841c38458b1f50c096a9"
       define_method(:install) do
         bin.install "xcaffold"
       end
